@@ -16,7 +16,7 @@ import {
 import Image from "next/image";
 import Heading from "../Heading";
 import { dataNavbar } from "@/lib/data";
-import { ButtonShimmer } from "../buttonShimmer";
+import { ButtonShimmer } from "../ButtonShimmer";
 import SideMenu from "./SideMenu";
 
 export default function Navbar() {
