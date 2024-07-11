@@ -7,27 +7,21 @@ import clsx from "clsx";
 import { dataTeam } from "@/lib/data";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
+import SectionHeading from "../organism/SectionHeading";
 
 const TeamSection = () => {
-  const [isOn, setIsOn] = useState(1);
+  const [isOn, setIsOn] = useState(2);
 
   return (
     <div className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8">
-      <div className="space-y-6 text-center">
-        <ButtonShimmer className={"uppercase "} classNameSecond={"cursor-text"}>
-          Tentang Tim
-        </ButtonShimmer>
-        <Heading className="capitalize text-5xl">
-          Meet Our{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E96E4D] to-pink-500">
-            Team Members
-          </span>
-        </Heading>
-        <p className="text-lg opacity-75 max-w-xl mx-auto">
-          Tim dukungan kami berkomitmen memberikan layanan terbaik dengan tim
-          yang terlatih dan berpengalaman.
-        </p>
-      </div>
+      <SectionHeading
+        title={"tentang tim"}
+        headOne={"Meet Our "}
+        headTwo={"Team Members"}
+        description={
+          "Tim dukungan kami berkomitmen memberikan layanan terbaik dengan tim yang terlatih dan berpengalaman."
+        }
+      />
 
       <div className="flex gap-4 justify-center max-sm:flex-col mt-12">
         {dataTeam.map((item, index) => (
