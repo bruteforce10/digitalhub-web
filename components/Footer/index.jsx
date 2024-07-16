@@ -3,40 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Heading from "../Heading";
 import { fontInter } from "@/lib/fontInter";
-
-const dataFooter = {
-  socialMedia: [
-    {
-      image: "/social-media/instagram.svg",
-      href: "https://www.instagram.com/digitalhub.id/",
-    },
-    {
-      image: "/social-media/tiktok.svg",
-      href: "https://www.tiktok.com/digitalhub.id/",
-    },
-    {
-      image: "/social-media/facebook.svg",
-      href: "https://www.facebook.com/digitalhub.id/",
-    },
-    {
-      image: "/social-media/linkedln.svg",
-      href: "https://www.facebook.com/digitalhub.id/",
-    },
-  ],
-  services: [
-    {
-      title: "Membership",
-      href: "/docs",
-    },
-    {
-      title: "Program Kami",
-      href: "/docs",
-    },
-  ],
-  contactUs: ["info@digitallivehubumkm.co.id", "+62 898-0961-999"],
-  alamat:
-    "Mega Bekasi Hypermall Lt.1, Jl. Ahmad Yani No.1 RT.004/RW.001, Marga Jaya, Kec. Bekasi Selatan, Kota Bekasi, Jawa Barat 17141",
-};
+import { dataFooter } from "@/lib/data";
 
 const Footer = () => {
   return (

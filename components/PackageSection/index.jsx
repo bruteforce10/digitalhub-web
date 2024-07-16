@@ -14,49 +14,7 @@ import { Button } from "../ui/button";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import Card from "./Card";
 import { fontInter } from "@/lib/fontInter";
-
-const dataPackagePremium = {
-  title: "Program Full Paket Cuan 🔥",
-  price: "9,9 Jt",
-  list: [
-    "Live Streaming 20 Sesi campuran dedicated & sharing",
-    "Marketplace Management",
-    "Social Media, 30 konten",
-  ],
-  listInfo:
-    "upload item, nama produk, deskripsi, setting ads - budget ads di luar paket hanya 1 marketplace",
-  paket: [
-    {
-      title: "Program Live Streaming",
-      price: "5Jt",
-      description:
-        "cocok untuk toko yang mau flash barang / masuk ke dunia live streaming",
-      list: [
-        "Live Streaming 20 Sesi",
-        "Jaminan 100 Viewers",
-        "Direct brand member / Sharing account (t&c)",
-      ],
-    },
-    {
-      title: "Program Social Media Management",
-      price: "6Jt",
-      list: [
-        "Arrange layout dari social media",
-        "boost content",
-        "Hal yang terkait di Tiktok & Instagram",
-      ],
-    },
-    {
-      title: "Program Marketplace manajemen",
-      price: "7,5Jt",
-      list: [
-        "set up marketplace baru",
-        "meningkatan marketplace termasuk set iklan",
-        "Customer Service (sesuai kebutuhan - Tokopedia, TikTok Shop, Shopee)",
-      ],
-    },
-  ],
-};
+import { dataPackagePremium } from "@/lib/data";
 
 const titleParts = dataPackagePremium.title.split(" ", 2);
 const part1 = titleParts[0];

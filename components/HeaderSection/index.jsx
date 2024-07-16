@@ -10,7 +10,7 @@ import Heading from "../Heading";
 
 const Header = () => {
   return (
-    <section className="flex   gap-6 items-center  md:flex-row flex-col-reverse justify-between mt-12  md:mt-16 max-w-screen-xl container px-8">
+    <section className="flex   gap-6 items-center  md:flex-row flex-col-reverse justify-center mt-12  md:mt-16 max-w-screen-xl container px-8">
       <Image
         src={"/circle-blur.png"}
         className="absolute  -left-[700px] -z-[10] -top-[500px] "

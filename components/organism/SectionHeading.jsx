@@ -18,7 +18,7 @@ const SectionHeading = ({
       {title && (
         <ButtonShimmer
           className={"uppercase "}
-          classNameSecond={"cursor-text h-8"}
+          classNameSecond={"cursor-text h-8 max-sm:text-xs "}
         >
           {title}
         </ButtonShimmer>
@@ -30,18 +30,20 @@ const SectionHeading = ({
         )}
       >
         {headOne}
-        <span className="text-transparent block h-fit md:h-14 bg-clip-text bg-gradient-to-r from-[#E96E4D] to-pink-500">
+        <span className="text-transparent block ml-2 h-fit md:h-14 bg-clip-text bg-gradient-to-r from-[#E96E4D] to-pink-500">
           {headTwo}
         </span>
       </Heading>
-      <p
-        className={cn(
-          "text-lg opacity-75 max-w-xl mx-auto",
-          classNameDescription
-        )}
-      >
-        {description}
-      </p>
+      {description && (
+        <p
+          className={cn(
+            "text-lg opacity-75 max-w-xl mx-auto",
+            classNameDescription
+          )}
+        >
+          {description}
+        </p>
+      )}
     </div>
   );
 };

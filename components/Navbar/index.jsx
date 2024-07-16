@@ -45,13 +45,21 @@ export default function Navbar() {
       layout
       transition={spring}
       className={clsx(
-        "top-0 z-[99] sticky pt-2",
+        "top-0 z-[99] sticky ",
         isScrolled &&
           "bg-white/80 backdrop-blur-sm o md:h-24 h-fit max-md:py-4 "
       )}
     >
-      <div className=" max-w-screen-xl   container px-8 w-full flex gap-8 justify-between items-center">
-        <Image src={"/logo.svg"} alt="logo" width={150} height={200} />
+      <div className=" max-w-screen-xl pt-4  container px-8 w-full flex gap-8 justify-between items-center">
+        <Image
+          src={"/logo.svg"}
+          alt="logo"
+          width={150}
+          className={
+            isScrolled && "scale-75 transition-all duration-500 origin-top"
+          }
+          height={200}
+        />
         <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
             <NavigationMenuItem>

@@ -22,8 +22,11 @@ const AboutSection = () => {
             <Button variant="outline" className="bg-transparent">
               TENTANG KAMI
             </Button>
-            <Heading tag="h2" className="capitalize  text-5xl max-sm:text-3xl">
-              Welcome Digital Live Hub
+            <Heading
+              tag="h2"
+              className="capitalize leading-relaxed text-5xl max-sm:text-3xl"
+            >
+              Welcome <br /> Digital Live Hub
             </Heading>
           </div>
           <div className="space-y-4">

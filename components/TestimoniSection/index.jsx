@@ -3,6 +3,7 @@ import React from "react";
 import Marquee from "../magicui/marquee";
 import { cn } from "@/lib/utils";
 import SectionHeading from "../organism/SectionHeading";
+import { reviews } from "@/lib/data";
 
 const ReviewCard = ({ img, name, body }) => {
   return (
@@ -26,24 +27,6 @@ const ReviewCard = ({ img, name, body }) => {
 };
 
 const TestimoniSection = () => {
-  const reviews = [
-    {
-      name: "Jack",
-      body: "I've never seen anything like this before. It's amazing. I love it.",
-      img: "https://avatar.vercel.sh/jack",
-    },
-    {
-      name: "Jill",
-      body: "I don't know what to say. I'm speechless. This is amazing.",
-      img: "https://avatar.vercel.sh/jill",
-    },
-    {
-      name: "John",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://avatar.vercel.sh/john",
-    },
-  ];
-
   return (
     <div className="space-y-12">
       <div className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8">

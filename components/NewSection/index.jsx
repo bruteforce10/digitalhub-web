@@ -2,21 +2,7 @@ import React from "react";
 import Heading from "../Heading";
 import Image from "next/image";
 import Link from "next/link";
-
-const dataMedia = [
-  {
-    image: "/media/tvone.webp",
-    link: "https://www.tvone.co.id/",
-  },
-  {
-    image: "/media/reportika.webp",
-    link: "https://www.reportika.com/",
-  },
-  {
-    image: "/media/pojokbekasi.webp",
-    link: "https://www.pojokbekasi.com/",
-  },
-];
+import { dataMedia } from "@/lib/data";
 
 const NewSection = () => {
   return (
@@ -34,7 +20,7 @@ const NewSection = () => {
             tag="h2"
             className="text-white max-sm:text-center capitalize text-4xl max-sm:text-3xl"
           >
-            Telat diliput Oleh Media
+            Telah diliput Oleh Media
           </Heading>
           <Image
             src={"/lightning.png"}
