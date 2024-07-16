@@ -64,7 +64,7 @@ const part2 = dataPackagePremium.title.substring(part1.length + 1);
 const PackageSection = () => {
   const { price, list, listInfo, paket } = dataPackagePremium;
   return (
-    <div className="relative flex max-lg:pt-24 pt-24 sm:mt-24 w-full  flex-col px-4 container sm:items-center justify-center">
+    <div className="relative flex max-lg:pt-24 pt-24 sm:mt-24 w-full overflow-hidden  flex-col px-4 container sm:items-center justify-center">
       <Ripple />
       <div className="space-y-4">
         <SectionHeading
