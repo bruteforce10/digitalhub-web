@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Ripple from "../magicui/ripple";
 import {
   Tooltip,
@@ -63,9 +64,17 @@ const part2 = dataPackagePremium.title.substring(part1.length + 1);
 
 const PackageSection = () => {
   const { price, list, listInfo, paket } = dataPackagePremium;
+  const [screen, setScreen] = React.useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      setScreen(true);
+    }
+  }, []);
+
   return (
     <div className="relative flex max-lg:pt-24 pt-24 sm:mt-24 w-full overflow-hidden  flex-col px-4 container sm:items-center justify-center">
-      <Ripple />
+      {!screen && <Ripple />}
       <div className="space-y-4">
         <SectionHeading
           headOne="Membership & Paket"
