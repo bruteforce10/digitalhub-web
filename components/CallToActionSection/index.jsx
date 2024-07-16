@@ -7,7 +7,7 @@ const CallToActionSection = () => {
   return (
     <div
       div
-      className="max-sm:mt-16 mt-32 max-lg:pt-24  flex max-lg:flex-col gap-24 lg:gap-8 justify-between bg-[#F0F0F0]"
+      className="max-sm:mt-16 mt-32 max-lg:pt-24  flex max-lg:flex-col gap-24 lg:gap-8 justify-between bg-white"
     >
       <div className="flex flex-col justify-center max-sm:text-center  w-full items-center max-md:container">
         <div className="space-y-8">

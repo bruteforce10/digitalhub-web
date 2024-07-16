@@ -1,6 +1,22 @@
 import React from "react";
 import Heading from "../Heading";
 import Image from "next/image";
+import Link from "next/link";
+
+const dataMedia = [
+  {
+    image: "/media/tvone.webp",
+    link: "https://www.tvone.co.id/",
+  },
+  {
+    image: "/media/reportika.webp",
+    link: "https://www.reportika.com/",
+  },
+  {
+    image: "/media/pojokbekasi.webp",
+    link: "https://www.pojokbekasi.com/",
+  },
+];
 
 const NewSection = () => {
   return (
@@ -29,14 +45,10 @@ const NewSection = () => {
           />
         </div>
         <div className="flex justify-center max-md:flex-wrap gap-6">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <Image
-              key={i}
-              src={`/media/${i + 1}.webp`}
-              alt="logo"
-              width={200}
-              height={200}
-            />
+          {dataMedia.map((item, i) => (
+            <Link key={i} href={item.link} className="block">
+              <Image src={item.image} alt="logo" width={200} height={200} />
+            </Link>
           ))}
         </div>
       </div>

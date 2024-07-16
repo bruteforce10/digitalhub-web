@@ -10,7 +10,7 @@ import Heading from "../Heading";
 
 const Header = () => {
   return (
-    <section className="flex  gap-6 items-center  md:flex-row flex-col-reverse justify-between mt-12  md:mt-16 max-w-screen-xl container px-8">
+    <section className="flex   gap-6 items-center  md:flex-row flex-col-reverse justify-between mt-12  md:mt-16 max-w-screen-xl container px-8">
       <Image
         src={"/circle-blur.png"}
         className="absolute  -left-[700px] -z-[10] -top-[500px] "
@@ -41,16 +41,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="relative ">
-        <Image src="/header.webp" alt="logo" width={480} height={480} />
-        <Image
-          src={"/circle-blur.png"}
-          className="absolute -left-12  -z-[10] top-0 scale-[3]"
-          alt="logo"
-          width={6400}
-          height={6400}
-        />
-      </div>
+
+      <Image src="/header.webp" alt="logo" width={480} height={480} />
     </section>
   );
 };

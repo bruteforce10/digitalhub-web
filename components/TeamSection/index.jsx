@@ -10,7 +10,7 @@ import { Badge } from "../ui/badge";
 import SectionHeading from "../organism/SectionHeading";
 
 const TeamSection = () => {
-  const [isOn, setIsOn] = useState(2);
+  const [isOn, setIsOn] = useState(1);
 
   return (
     <div className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8">
