@@ -13,7 +13,10 @@ const TeamSection = () => {
   const [isOn, setIsOn] = useState(1);
 
   return (
-    <div className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8">
+    <section
+      id="myTim"
+      className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8"
+    >
       <SectionHeading
         title={"tentang tim"}
         headOne={"Meet Our "}
@@ -61,7 +64,7 @@ const TeamSection = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
