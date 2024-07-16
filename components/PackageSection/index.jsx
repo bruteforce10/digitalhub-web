@@ -16,7 +16,7 @@ import { fontInter } from "@/lib/fontInter";
 
 const dataPackagePremium = {
   title: "Program Full Paket Cuan 🔥",
-  price: "7,5 Jt",
+  price: "9,9 Jt",
   list: [
     "Live Streaming 20 Sesi campuran dedicated & sharing",
     "Marketplace Management",
@@ -38,7 +38,7 @@ const dataPackagePremium = {
     },
     {
       title: "Program Social Media Management",
-      price: "5Jt",
+      price: "6Jt",
       list: [
         "Arrange layout dari social media",
         "boost content",
