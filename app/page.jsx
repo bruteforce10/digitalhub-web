@@ -1,7 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import CallToActionSection from "@/components/CallToActionSection";
 import FeatureSection from "@/components/FeatureSection";
-import Footer from "@/components/Footer";
 import Header from "@/components/HeaderSection";
 import NewSection from "@/components/NewSection";
 import PackageSection from "@/components/PackageSection";
@@ -19,7 +18,6 @@ export default function Home() {
       <CallToActionSection />
       <TestimoniSection />
       <NewSection />
-      <Footer />
     </main>
   );
 }

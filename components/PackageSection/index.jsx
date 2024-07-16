@@ -79,7 +79,7 @@ const PackageSection = () => {
         </Link>
       </div>
       <div className="mt-12  bg-white/50 backdrop-blur-sm lg:w-[900px] max-sm:w-full p-[1px]  rounded-3xl border-white border-2 ">
-        <div className="flex lg:flex-row flex-col   sm:w-sm justify-between gap-12 lg:gap-6  bg-[#D5005D]/80 drop-shadow-custom_xl rounded-3xl backdrop-blur-sm px-8 py-6 min-h-[210px]">
+        <div className="flex lg:flex-row flex-col   sm:w-sm justify-between gap-12 lg:gap-6  bg-[#D5005D]/80 sm:drop-shadow-custom_xl rounded-3xl backdrop-blur-sm px-8 py-6 min-h-[210px]">
           <div className="flex flex-col items-center gap-4 text-white ">
             <Button
               variant="label"
