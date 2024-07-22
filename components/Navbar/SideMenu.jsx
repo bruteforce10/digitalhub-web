@@ -12,7 +12,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { fontGrifter } from "@/lib/fontGrifter";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Link from "next/link";
 import { dataNavbar } from "@/lib/data";
@@ -28,7 +27,7 @@ const SideMenu = () => {
         <SheetContent className="pt-20 space-y-4 ">
           <SheetHeader>
             <SheetTitle>
-              <Link href={"#"}>Beranda</Link>
+              <Link href={"/"}>Beranda</Link>
             </SheetTitle>
           </SheetHeader>
           <SheetHeader>
@@ -43,11 +42,11 @@ const SideMenu = () => {
                       {item.list.map((component, index) => {
                         return (
                           <div
-                            className="first:pt-0 pt-4 space-y-1 text-start last:pb-0"
                             key={index}
+                            className="first:pt-0 pt-4 space-y-1 text-start last:pb-0"
                           >
                             <Link
-                              href={"#"}
+                              href={component.href}
                               className={`block text-lg text-foreground hover:underline font-semibold`}
                             >
                               {component.title}
