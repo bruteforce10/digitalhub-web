@@ -31,7 +31,7 @@ const PackageSection = () => {
   }, []);
 
   return (
-    <div className="relative flex max-lg:pt-24 pt-24 sm:mt-24 w-full overflow-hidden  flex-col px-4 container sm:items-center justify-center">
+    <div className="relative pt-24 sm:mt-24 flex w-full overflow-hidden flex-col px-4 container items-center justify-center">
       {!screen && <Ripple />}
       <div className="space-y-4">
         <SectionHeading
@@ -45,7 +45,10 @@ const PackageSection = () => {
           Lihat Selengkapnya
         </Link>
       </div>
-      <div className="mt-12  bg-white/50 backdrop-blur-sm lg:w-[900px] max-sm:w-full p-[1px]  rounded-3xl border-white border-2 ">
+      <div
+        id="paket"
+        className="mt-12  bg-white/50 backdrop-blur-sm lg:w-[900px] max-sm:w-full p-[1px]  rounded-3xl border-white border-2 "
+      >
         <div className="flex lg:flex-row flex-col   sm:w-sm justify-between gap-12 lg:gap-6  bg-[#D5005D]/80 sm:drop-shadow-custom_xl rounded-3xl backdrop-blur-sm px-8 py-6 min-h-[210px]">
           <div className="flex flex-col items-center gap-4 text-white ">
             <Button

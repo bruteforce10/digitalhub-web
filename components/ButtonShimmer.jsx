@@ -1,10 +1,17 @@
 import { fontGrifter } from "@/lib/fontGrifter";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import React from "react";
 
-export const ButtonShimmer = ({ children, className, classNameSecond }) => {
+export const ButtonShimmer = ({
+  children,
+  className,
+  classNameSecond,
+  link,
+}) => {
   return (
-    <button
+    <Link
+      href={link}
       className={cn(
         "relative inline-flex  overflow-hidden rounded-full p-[1.5px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
         className
@@ -20,6 +27,10 @@ export const ButtonShimmer = ({ children, className, classNameSecond }) => {
       >
         {children}
       </span>
-    </button>
+    </Link>
   );
+};
+
+ButtonShimmer.defaultProps = {
+  link: "#",
 };

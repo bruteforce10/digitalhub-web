@@ -15,7 +15,7 @@ const TeamSection = () => {
   return (
     <section
       id="myTim"
-      className="max-sm:mt-16 mt-20 max-w-screen-xl container px-8"
+      className="max-sm:mt-20  mt-20 max-w-screen-xl container px-8"
     >
       <SectionHeading
         title={"tentang tim"}

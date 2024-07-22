@@ -7,7 +7,7 @@ import { dataFeature } from "@/lib/data";
 
 const FeatureSection = () => {
   return (
-    <div div className="max-sm:mt-16 mt-32 max-w-screen-xl container px-8">
+    <div div className="max-sm:mt-20 mt-32 max-w-screen-xl container px-8">
       <div className="space-y-4">
         <SectionHeading
           title={"PELAYANAN KAMI"}
@@ -19,7 +19,7 @@ const FeatureSection = () => {
           }
         />
         <Link
-          href={"/services"}
+          href={"/program-kami"}
           className="block text-center underline text-custom_primary"
         >
           Lihat Selengkapnya

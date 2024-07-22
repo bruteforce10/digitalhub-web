@@ -56,7 +56,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block font-medium text-black dark:text-white">
+            <span className="relative block text-black dark:text-white">
               {tab.title}
             </span>
           </button>
@@ -67,7 +67,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("-mt-8 max-sm:-mt-3", contentClassName)}
+        className={cn("mt-4", contentClassName)}
       />
     </>
   );
@@ -92,10 +92,7 @@ export const FadeInDiv = ({ className, tabs, hovering }) => {
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn(
-            "w-full h-full absolute sm:pt-8 pt-4  top-0 left-0",
-            className
-          )}
+          className={cn("w-full  absolute top-0  left-0", className)}
         >
           {tab.content}
         </motion.div>

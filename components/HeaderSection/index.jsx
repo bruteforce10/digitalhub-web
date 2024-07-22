@@ -30,7 +30,10 @@ const Header = () => {
           keuntungan bisnismu!
         </p>
         <div className="flex items-center gap-4 max-md:justify-center">
-          <ButtonShimmer classNameSecond={"bg-transparent backdrop-blur-none"}>
+          <ButtonShimmer
+            link={"#paket"}
+            classNameSecond={"bg-transparent backdrop-blur-none"}
+          >
             GET STARTED
           </ButtonShimmer>
           <Link href="#" className="block">

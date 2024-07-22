@@ -16,6 +16,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import Link from "next/link";
 import { dataNavbar } from "@/lib/data";
 import { ButtonShimmer } from "../ButtonShimmer";
+import { fontGrifter } from "@/lib/fontGrifter";
 
 const SideMenu = () => {
   return (
@@ -35,7 +36,9 @@ const SideMenu = () => {
               {dataNavbar.map((item, index) => {
                 return (
                   <AccordionItem value={`item-${index}`} key={index}>
-                    <AccordionTrigger className="capitalize">
+                    <AccordionTrigger
+                      className={`capitalize ${fontGrifter.className} tracking-normal`}
+                    >
                       {item.title}
                     </AccordionTrigger>
                     <AccordionContent className="space-y-4 divide-y p-4">
