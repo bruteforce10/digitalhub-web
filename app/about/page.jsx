@@ -15,29 +15,29 @@ import { fontInter } from "@/lib/fontInter";
 const About = () => {
   const tabs = [
     {
-      title: "Product",
-      value: "product",
+      title: "Visi",
+      value: "visi",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10   bg-white drop-shadow-sm">
+        <div className="w-full overflow-hidden relative rounded-2xl p-10   bg-white drop-shadow-md">
           <p>
-            Kami mempromosikan usaha Anda menggunakan platform digital dan media
-            sosial sebagai alat pemasaran inovatif. Teknologi kami meningkatkan
-            interaksi yang dipersonalisasi dengan pembeli untuk menciptakan
-            koneksi otentik dan pertumbuhan ekonomi yang substansial.
+            kami mempromosikan usaha anda memanfaatkan platform digital dan
+            media sosial sebagai alat pemasaran yang inovatif. Teknologi sebagai
+            alat untuk meningkatkan interaksi yang dipersonalisasi dengan
+            pembeli bertujuan untuk menghasilkan koneksi otentik dan pertumbuhan
+            ekonomi yang substansial.
           </p>
         </div>
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Misi",
+      value: "misi",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10   bg-white drop-shadow-sm">
+        <div className="w-full overflow-hidden relative rounded-2xl p-10   bg-white drop-shadow-md">
           <p>
-            Kami dummy ssss usaha Anda menggunakan platform digital dan media
-            sosial sebagai alat pemasaran inovatif. Teknologi kami meningkatkan
-            interaksi yang dipersonalisasi dengan pembeli untuk menciptakan
-            koneksi otentik dan pertumbuhan ekonomi yang substansial.
+            kami membantu pelaku usaha menjangkau luas pasar lokal di Indonesia
+            dengan platform digital dan mencapai kesuksesan yang belum pernah
+            terjadi sebelumnya melalui kolaborasi.
           </p>
         </div>
       ),

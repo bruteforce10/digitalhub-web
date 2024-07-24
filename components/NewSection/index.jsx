@@ -32,7 +32,7 @@ const NewSection = () => {
         </div>
         <div className="flex justify-center max-md:flex-wrap gap-6">
           {dataMedia.map((item, i) => (
-            <Link key={i} href={item.link} className="block">
+            <Link key={i} href={item.link} target="_blank" className="block">
               <Image src={item.image} alt="logo" width={200} height={200} />
             </Link>
           ))}

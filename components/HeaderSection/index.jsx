@@ -36,10 +36,18 @@ const Header = () => {
           >
             GET STARTED
           </ButtonShimmer>
-          <Link href="#" className="block">
+          <Link
+            href="https://www.instagram.com/digital.livehub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            className="block"
+            target="_blank"
+          >
             <FaInstagram className="text-4xl opacity-75" />
           </Link>
-          <Link href="#" className="block">
+          <Link
+            href="https://www.tiktok.com/@digital.livehub"
+            className="block"
+            target="_blank"
+          >
             <PiTiktokLogo className="text-4xl opacity-75" />
           </Link>
         </div>
