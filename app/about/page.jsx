@@ -67,8 +67,31 @@ const About = () => {
     ),
     accordionContent: [
       {
-        title: "Apa itu DigitalHub?",
-        description: "bisnis yang fokus pada digital kemajuan UMKM",
+        title: "Bagaimana cara berlangganan layanan Digital LIVEhub UMKM?",
+        description:
+          "Anda dapat memilih paket layanan yang kami sediakan, seperti : Program Live Streaming, Program Social Media Management, Program Marketplace Manajemen dan Program Full Paket Cuan. Anda bisa ikuti setiap instruksi hingga berhasil membeli pilihan paket layanan yang usaha anda butuhkan.",
+      },
+      {
+        title:
+          "Apakah saya perlu memiliki peralatan sendiri untuk menggunakan layanan studio live?",
+        description:
+          "Tidak, Studio kami dilengkapi dengan peralatan yang lengkap, termasuk kamera, lighting, dan mikrofon. Tim kami juga siap membantu usaha anda selama sesi live streaming atau produksi konten.",
+      },
+      {
+        title: "Apakah Digital LIVEhub UMKM hanya untuk UMKM tertentu?",
+        description:
+          "Kami terbuka untuk semua jenis UMKM, mulai dari usaha kecil hingga yang lebih besar. Layanan kami dirancang untuk membantu bisnis di berbagai sektor dan ukuran.",
+      },
+      {
+        title: "Berapa biaya untuk menggunakan layanan Digital Live Hub?",
+        description:
+          "Biaya layanan bervariasi tergantung pada paket yang dipilih dan kebutuhan spesifik bisnis Anda. Untuk informasi lebih lanjut mengenai harga Anda bisa temukan informasinya pada halaman web digital LIVEhub UMKM www.digitallivehubumkm.co.id/#paket",
+      },
+      {
+        title:
+          "Bagaimana jika saya memiliki pertanyaan atau masalah setelah mendaftar?",
+        description:
+          "Tim kami siap membantu Anda dengan pertanyaan atau masalah apa pun. Anda dapat menghubungi kami melalui email: info@digitallivehubumkm.co.id & Whatsapp: +62 898-0961-999",
       },
     ],
   };
@@ -123,10 +146,14 @@ const About = () => {
           }
           classNameDescription="sm:max-w-2xl max-sm:text-sm"
         />
-        <Accordion type="single" collapsible className="max-w-2xl mx-auto">
+        <Accordion
+          type="single"
+          collapsible
+          className="max-w-2xl space-y-12 mx-auto"
+        >
           {accordionContent.map((data, index) => (
             <AccordionItem key={data.title} value={`item-${index}`}>
-              <AccordionTrigger className="max-sm:text-start">
+              <AccordionTrigger className="sm:text-start">
                 {data.title}
               </AccordionTrigger>
               <AccordionContent>{data.description}</AccordionContent>
