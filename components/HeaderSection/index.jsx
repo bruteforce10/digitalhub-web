@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { fontGrifter } from "@/lib/fontGrifter";
 import Image from "next/image";
 import React from "react";
-import { ButtonShimmer } from "../ButtonShimmer";
 import { FaInstagram } from "react-icons/fa6";
 import { PiTiktokLogo } from "react-icons/pi";
 import Link from "next/link";
 import Heading from "../Heading";
+import { ButtonShimmerOps } from "../ButtonShimmerOps";
 
 const Header = () => {
   return (
@@ -30,12 +29,12 @@ const Header = () => {
           keuntungan bisnismu!
         </p>
         <div className="flex items-center gap-4 max-md:justify-center">
-          <ButtonShimmer
+          <ButtonShimmerOps
             link={"#paket"}
             classNameSecond={"bg-transparent backdrop-blur-none"}
           >
             GET STARTED
-          </ButtonShimmer>
+          </ButtonShimmerOps>
           <Link
             href="https://www.instagram.com/digital.livehub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             className="block"

@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeading from "../organism/SectionHeading";
-import { ButtonShimmer } from "../ButtonShimmer";
 import Image from "next/image";
+import { ButtonShimmerOps } from "../ButtonShimmerOps";
 
 const CallToActionSection = () => {
   return (
@@ -21,11 +21,11 @@ const CallToActionSection = () => {
               "kami siap membantu kamu mengembangkan pemasaran produk dengan cakupan yang lebih luas."
             }
           />
-          <ButtonShimmer
+          <ButtonShimmerOps
             classNameSecond={"bg-transparent text-lg backdrop-blur-none"}
           >
             HUBUNGI KAMI
-          </ButtonShimmer>
+          </ButtonShimmerOps>
         </div>
       </div>
       <Image

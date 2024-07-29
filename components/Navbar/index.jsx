@@ -20,7 +20,6 @@ import { ButtonShimmer } from "../ButtonShimmer";
 import SideMenu from "./SideMenu";
 import { motion, spring } from "framer-motion";
 import clsx from "clsx";
-import { fontGrifter } from "@/lib/fontGrifter";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -105,12 +104,7 @@ export default function Navbar() {
               );
             })}
             <NavigationMenuItem className="max-xl:hidden">
-              <Link
-                href="/login"
-                className={`${fontGrifter.className} tracking-[0.08em] bg-[#2B032A] text-white px-4 border-2 border-custom_primary py-2 rounded-full`}
-              >
-                Hubungi Kami
-              </Link>
+              <ButtonShimmer link="/login">Hubungi Kami</ButtonShimmer>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
