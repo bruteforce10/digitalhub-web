@@ -12,7 +12,7 @@ const FeatureSection = () => {
         <SectionHeading
           title={"PELAYANAN KAMI"}
           headOne={"Siap Bantu Bisnismu"}
-          headTwo={"Digital Live Hub"}
+          headTwo={"Digital Livehub"}
           classNameHeading="flex-col-reverse "
           description={
             "siap membantu kamu mengembangkan pemasaran produk dengan cakupan yang lebih luas."

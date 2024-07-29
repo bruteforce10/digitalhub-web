@@ -35,12 +35,12 @@ const PackageSection = () => {
       {!screen && <Ripple />}
       <div className="space-y-4">
         <SectionHeading
-          headOne="Membership & Paket"
+          headOne="Workshops"
           description="Pilih Paket Live streamer Sesuai Kebutuhan Kamu"
         />
         <Link
-          href={"/services"}
-          className="block text-center underline text-custom_primary"
+          href={"/program-kami"}
+          className="block z-[100] relative text-center underline text-custom_primary"
         >
           Lihat Selengkapnya
         </Link>

@@ -71,7 +71,7 @@ const Footer = () => {
             className={`${fontInter.className} capitalize tracking-tight font-bold text-2xl bg-clip-text bg-gradient-to-r from-[#E96E4D] to-pink-500 text-transparent`}
             tag="h3"
           >
-            We Can&apos;t Wait to Hear From You!
+            Sampai Berjumpa di Lokasi!
           </Heading>
           <p className="mt-2 leading-relaxed">{dataFooter.alamat}</p>
         </div>
