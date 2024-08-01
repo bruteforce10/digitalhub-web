@@ -6,7 +6,7 @@ import Heading from "../Heading";
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import FormInput from "../FormInput";
 
-const Card = ({ title, description, price, list }) => {
+const Card = ({ title, description, list }) => {
   return (
     <div className="space-y-6 min-w-[250px] ">
       <div className="max-lg:space-y-4 space-y-8">
