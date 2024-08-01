@@ -17,6 +17,8 @@ import Link from "next/link";
 import { dataNavbar } from "@/lib/data";
 import { ButtonShimmer } from "../ButtonShimmer";
 import { fontGrifter } from "@/lib/fontGrifter";
+import { Dialog, DialogTrigger } from "../ui/dialog";
+import FormInput from "../FormInput";
 
 const SideMenu = () => {
   return (
@@ -67,9 +69,12 @@ const SideMenu = () => {
             </Accordion>
           </SheetHeader>
           <div>
-            <ButtonShimmer className={"block w-full mt-8"}>
-              Hubungi Kami
-            </ButtonShimmer>
+            <Dialog>
+              <ButtonShimmer className={"block w-full mt-8"}>
+                <DialogTrigger>Hubungi Kami</DialogTrigger>
+              </ButtonShimmer>
+              <FormInput />
+            </Dialog>
           </div>
         </SheetContent>
       </Sheet>

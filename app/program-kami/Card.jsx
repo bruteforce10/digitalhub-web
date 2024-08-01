@@ -19,7 +19,7 @@ const Card = ({ title, heading, desc, images, className }) => {
           title={title}
           headOne={headingOne}
           headTwo={headingTwo}
-          className="flex-col items-center md:items-start flex max-md:mx-auto"
+          className="md:inline md:text-start"
           classNameHeading="md:justify-start md:text-start max-sm:text-2xl"
         />
         <p

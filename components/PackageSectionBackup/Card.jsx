@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { fontInter } from "@/lib/fontInter";
 import Heading from "../Heading";
+import { Dialog, DialogTrigger } from "../ui/dialog";
+import FormInput from "../FormInput";
 
 const Card = ({ title, description, price, list }) => {
   return (
@@ -40,13 +42,18 @@ const Card = ({ title, description, price, list }) => {
         </p>
       </div>
 
-      <Button
-        variant="label"
-        size="label"
-        className={`${fontInter.className}  max-sm:w-full tracking-normal bg-gradient-to-b from-custom_secondary to-custom_tersier text-white hover:text-white font-medium text-md h-10 px-12`}
-      >
-        Choose plan
-      </Button>
+      <Dialog>
+        <DialogTrigger>
+          <Button
+            variant="label"
+            size="label"
+            className={`${fontInter.className}  max-sm:w-full tracking-normal bg-gradient-to-b from-custom_secondary to-custom_tersier text-white hover:text-white font-medium text-md h-10 px-12`}
+          >
+            Choose Plan
+          </Button>
+        </DialogTrigger>
+        <FormInput />
+      </Dialog>
     </div>
   );
 };

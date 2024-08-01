@@ -21,6 +21,9 @@ import SideMenu from "./SideMenu";
 import { motion, spring } from "framer-motion";
 import clsx from "clsx";
 
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import FormInput from "../FormInput";
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
 
@@ -104,7 +107,12 @@ export default function Navbar() {
               );
             })}
             <NavigationMenuItem className="max-xl:hidden">
-              <ButtonShimmer link="/login">Hubungi Kami</ButtonShimmer>
+              <Dialog>
+                <ButtonShimmer>
+                  <DialogTrigger>Hubungi Kami</DialogTrigger>
+                </ButtonShimmer>
+                <FormInput />
+              </Dialog>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

@@ -17,8 +17,10 @@ const SectionHeading = ({
     <div className={cn("space-y-2 text-center", className)}>
       {title && (
         <ButtonShimmer
-          className={"uppercase "}
-          classNameSecond={"cursor-text h-8 max-sm:text-xs "}
+          className={cn(
+            "uppercase cursor-text block w-fit mx-auto mb-4  px-4 py-1  border-none ",
+            className
+          )}
         >
           {title}
         </ButtonShimmer>
