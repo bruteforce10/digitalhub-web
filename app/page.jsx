@@ -3,7 +3,8 @@ import CallToActionSection from "@/components/CallToActionSection";
 import FeatureSection from "@/components/FeatureSection";
 import Header from "@/components/HeaderSection";
 import NewSection from "@/components/NewSection";
-import PackageSection from "@/components/PackageSection";
+import PackageSectionBackup from "@/components/PackageSectionBackup";
+
 import TeamSection from "@/components/TeamSection";
 import TestimoniSection from "@/components/TestimoniSection";
 
@@ -14,7 +15,7 @@ export default function Home() {
       <AboutSection />
       <TeamSection />
       <FeatureSection />
-      <PackageSection />
+      <PackageSectionBackup />
       <CallToActionSection />
       <TestimoniSection />
       <NewSection />
