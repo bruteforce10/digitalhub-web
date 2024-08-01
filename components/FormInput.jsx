@@ -41,7 +41,7 @@ const formSchema = z.object({
     .startsWith("+62", { message: "Whatsapp must start with +62" }),
 });
 
-const FormInput = ({ paket }) => {
+const FormInput = () => {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -52,9 +52,10 @@ const FormInput = ({ paket }) => {
     },
   });
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = React.useState(false);
 
   async function onSubmit(values) {
-    console.log(paket);
+    setIsLoading(true);
     const { nama, email, message, numberwhatsapp } = values;
 
     const result = await sendMail({
@@ -64,6 +65,7 @@ const FormInput = ({ paket }) => {
     });
 
     if (result) {
+      setIsLoading(false);
       toast({
         title: "Success",
         description: "Email sent successfully",
@@ -145,7 +147,11 @@ const FormInput = ({ paket }) => {
                   </FormItem>
                 )}
               />
-              <Button className="w-full bg-custom_tersier" type="submit">
+              <Button
+                disabled={isLoading}
+                className="w-full bg-custom_tersier"
+                type="submit"
+              >
                 Submit
               </Button>
             </form>

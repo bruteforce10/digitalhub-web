@@ -43,14 +43,10 @@ const Card = ({ title, description, price, list }) => {
       </div>
 
       <Dialog>
-        <DialogTrigger>
-          <Button
-            variant="label"
-            size="label"
-            className={`${fontInter.className}  max-sm:w-full tracking-normal bg-gradient-to-b from-custom_secondary to-custom_tersier text-white hover:text-white font-medium text-md h-10 px-12`}
-          >
-            Choose Plan
-          </Button>
+        <DialogTrigger
+          className={`${fontInter.className} rounded-full  max-sm:w-full tracking-normal bg-gradient-to-b from-custom_secondary to-custom_tersier text-white hover:text-white font-medium text-md h-10 px-12`}
+        >
+          Choose Plan
         </DialogTrigger>
         <FormInput />
       </Dialog>
