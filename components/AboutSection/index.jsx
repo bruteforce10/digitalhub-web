@@ -19,14 +19,17 @@ const AboutSection = () => {
         </div>
         <div className="space-y-8 lg:pb-10">
           <div className="space-y-4">
-            <Button variant="outline" className="bg-transparent">
+            <Button
+              variant="outline"
+              className="bg-transparent rounded-full cursor-text"
+            >
               TENTANG KAMI
             </Button>
             <Heading
               tag="h2"
-              className="capitalize leading-relaxed text-5xl max-sm:text-3xl"
+              className="capitalize  leading-relaxed text-5xl max-sm:text-3xl"
             >
-              Welcome <br /> Digital Live Hub
+              Welcome <br /> Digitalive Hub
             </Heading>
           </div>
           <div className="space-y-4">
