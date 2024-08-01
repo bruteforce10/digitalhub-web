@@ -59,16 +59,16 @@ const FormInput = () => {
     const { nama, email, message, numberwhatsapp } = values;
 
     const result = await sendMail({
-      to: email,
-      subject: "Contact Us",
-      body: `saya ${nama} dengan nomor whatsapp ${numberwhatsapp} ingin menghubungi anda dengan pesan ${message}`,
+      to: "info@digitallivehubumkm.co.id",
+      subject: `${nama} - ${email}`,
+      body: `saya ${nama} dengan nomor whatsapp ${numberwhatsapp} dan ${email} ingin menghubungi anda dengan pesan ${message}`,
     });
 
     if (result) {
       setIsLoading(false);
       toast({
-        title: "Success",
-        description: "Email sent successfully",
+        title: "Email Berhasil Terkirim",
+        description: "Kami akan menghubungi anda segera!",
       });
     }
   }
