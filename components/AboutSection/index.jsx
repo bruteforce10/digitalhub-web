@@ -29,7 +29,7 @@ const AboutSection = () => {
               tag="h2"
               className="capitalize  leading-relaxed text-5xl max-sm:text-3xl"
             >
-              Welcome <br /> Digitalive Hub
+              Welcome <br /> Digitalivehub
             </Heading>
           </div>
           <div className="space-y-4">
@@ -39,10 +39,10 @@ const AboutSection = () => {
               atraktif dan inovatif menjadi usaha siap digital lewat
               live-streaming sebagai tren saat ini dan future communication dari
               sendi sosial dan ekonomi. <br />
-              <br /> Digital LIVEhub UMKM hadir membangun meta ecosystem masa
-              depan bersama para pengusaha, UMKM, dan talenta muda serta
-              platform digital partnership untuk menciptakan komunitas sebagai
-              support system yang solid dan siap menghadapi era digital.
+              <br /> Digital LIVEhub hadir membangun meta ecosystem masa depan
+              bersama para pengusaha, UMKM, dan talenta muda serta platform
+              digital partnership untuk menciptakan komunitas sebagai support
+              system yang solid dan siap menghadapi era digital.
             </p>
             <Link
               href={"/about"}
